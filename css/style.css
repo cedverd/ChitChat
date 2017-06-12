@@ -1,0 +1,150 @@
+body{
+	background-color: #313131;
+	font-family: all;
+	height: 645px;
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-size: -webkit-xxx-large;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+h4{
+	text-align: center;
+	font-size: 23px;
+	color: white;
+}
+h5{
+	text-align: center;
+	font-size: 20px;
+	margin-top: -19px;
+	color: white;
+}
+h1{
+	text-align: center;
+	margin-bottom: 0px;
+	position: relative;
+	color: white;
+}
+.p1{
+}
+.para1{
+	margin-top: -18px;
+	border-style: hidden;
+	margin-left: -18px;
+	border-top-left-radius: 7px;
+	width: 318px;
+	background-color: #2574A9;
+	padding-left: 12px;
+	border-top-right-radius: 6px;
+	font-size: 20px;
+	font-family: cursive;
+	font-weight: bold;
+	color: white;
+}
+.para2{
+	margin-top: -18px;
+	border-style: hidden;
+	margin-left: -18px;
+	border-top-left-radius: 7px;
+	width: 319px;
+	background-color: #2574A9;
+	padding-left: 12px;
+	border-top-right-radius: 6px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+	color: white;
+}
+.user-login{
+	width: 294px;
+	height: 137px;
+	background-color: #222;
+	padding: 18px;
+	border-radius: 3%;
+	box-sizing: content-box;
+	box-shadow: -2px -2px 11px;
+	margin-top: 113px;
+	position: absolute;
+	margin-left: 80px;
+	line-height: 28px;
+}
+span{
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	font-family: monospace;
+}
+.user-register{
+	width: 295px;
+	height: 202px;
+	background-color: #222;
+	padding: 18px;
+	border-radius: 3%;
+	box-sizing: content-box;
+	box-shadow: -2px -2px 11px;
+	float: right;
+	margin-top: 44px;
+	margin-right: 66px;
+	line-height: 28px;
+}
+input[type="text"]{
+	border-radius: 3px;
+	border-style: hidden;
+	height: 24px;
+	width: 180px;
+	padding-left: 12px;
+	margin-left: 33px;
+}
+input[type="password"]{
+	border-radius: 3px;
+	border-style: hidden;
+	height: 24px;
+	width: 177px;
+	padding-left: 12px;
+	margin-left: 16px;
+	margin-top: 8px;
+}
+button:hover
+{
+	 display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+button:hover, button:focus,button:active{
+	-webkit-transform: scale(0.9);
+  transform: scale(0.9);	
+}
+
+input[type="email"]{
+	border-radius: 3px;
+	border-style: hidden;
+	height: 24px;
+	width: 179px;
+	padding-left: 12px;
+	margin-left: 61px;
+	margin-top: 8px;
+}
+button
+{
+	height: 28px;
+	width: 67px;
+	border-radius: 3px;
+	border-style: hidden;
+	font-size: 15px;
+	margin-left: 99px;	
+	margin-top: 14px;
+	font-weight: bold;
+}
+input[ tyep="placeholder"]
+{
+	font-weight:bold 
+}

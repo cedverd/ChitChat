@@ -1,0 +1,54 @@
+.chat-box{
+	width: 504px;
+	background-color: #222;
+	margin: 0 auto;
+	height: 397px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px;
+	padding: 15px;
+}
+input[type="text"]{
+	margin-top: 6px;
+	width: 425px;
+	margin-left: 13px;
+	background: transparent;
+	color: white;
+	font-size: 15px;
+	border-bottom-style: solid;
+	outline: none;
+}
+	textarea{
+	width: 500px;
+	height: 309px;
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px;
+}
+button{
+	margin-top: 16px;
+	margin-left: 229px;
+	width: 60px;
+	height: 32px;
+	font-size: large;
+	font-weight: 600;	
+	border-radius: 3px;
+	border-style: hidden;
+}
+button:hover{
+	display: inline-block;
+	vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+button:hover, button:focus, button:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+.chat
+{
+	
+}
