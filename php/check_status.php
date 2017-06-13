@@ -3,14 +3,12 @@
 	if(isset($_SESSION['myid']))
 	{
 		$myid = $_SESSION['myid'];
-		if(!empty($uid))
+		if(!empty($myid))
 		{
 			$con = mysqli_connect("locaLhost","root","","chat_db");
-			$qry = " select * from invitations where source_ID = '$uid' order by Invi_ID desc";
+			$qry = " select * from invitations where source_ID = '$myid' order by Invi_ID desc";
 			$result = $con->query($qry);
-			$row = $result->fetch_assoc();
-
-			if( $row)
+			if($row = $result->fetch_assoc())
 			{		
 				if($row['status'] =='y')
 				{

@@ -6,7 +6,7 @@
 		if( !empty($_SESSION['myid']))
 		{
 			$con = mysqli_connect("localhost","root","","chat_db");
-			$q = "select * from invitations where dest_ID = '{$_SESSION['uid']}'";
+			$q = "select * from invitations where dest_ID = '{$_SESSION['myid']}' order by Invi_id desc ";
 			$result = $con->query($q);
 			
 			if($row = $result->fetch_assoc())
@@ -17,7 +17,7 @@
 				header('Location: startchat.php');
 			}
 			else
-				header('Location:..//index.html');
+				header('Location:../invite.html');
 		} 
 		else
 		{

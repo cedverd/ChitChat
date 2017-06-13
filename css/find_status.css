@@ -1,0 +1,30 @@
+.chk-invt{
+
+background-color: #222;
+
+width: 456px;
+
+margin: 0 auto;
+
+border-radius: 3px;
+}
+.b1{
+	
+margin-left: 164px;
+	
+margin-bottom: 33px;
+	
+height: 37px;
+	
+width: 117px;
+}
+h2{
+	
+background-color: cornflowerblue;
+	
+padding-left: 8px;
+	
+border-top-right-radius: 4px;
+	
+border-top-left-radius: 4px;
+}

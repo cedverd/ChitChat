@@ -1,11 +1,13 @@
 .invite{
-	background-color: darkgrey;
-	height: 137px;
+	background-color: #222;
+	height: 167px;
 	padding-top: 20px;
-	margin-left: 419px;
+	margin-left: 454px;
 	margin-right: 461px;
 	border-radius: 3px;
 	padding-left: 59px;
+	box-shadow: 2px 2px 6px;
+	margin-top: 24px;
 }
 input[type="text"]{
 	line-height: 19px;
@@ -23,4 +25,51 @@ input[type="button"]{
 	height: 27px;
 	font-size: medium;
 	border: 2px hidden;
+}
+.check-invite{
+	background-color: #222;
+	width: 239px;
+	margin: 0 auto;
+	margin-top: -15px;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	border-style: hidden;
+	box-shadow: 2px 3px 6px;
+	height: 113px;
+}
+.this-or-that{
+	background-color: #222;
+	width: 75px;
+	margin: 0 auto;
+	border-radius: 3px;
+	box-shadow: 2px 2px 6px;
+}
+h3{
+	background-color: cornflowerblue;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-left: 29px;
+	color: white;
+}
+p{
+	background-color: cornflowerblue;
+	height: 28px;
+	margin-top: -21px;
+	margin-left: -59px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding-top: 2px;
+	padding-left: 11px;
+	font-size: 22px;
+	font-weight: bolder;
+	color: white;
+	text-align: center;
+}
+.sub{
+	margin-bottom: 20px;
+	padding-top: 0px;
+	position: relative;
+	margin-top: auto;
+	margin-left: 66px;
+	width: 117px;
 }
