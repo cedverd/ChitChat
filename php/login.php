@@ -11,7 +11,7 @@
 			$result = $con->query($qry);
 			if( $row = $result->fetch_assoc())
 			{
-				$_SESSION['myid'] = $row['Uid'];	
+				$_SESSION['myid'] = $row['Uid'];
 				header('Location:../invite.html');
 			}
 		}

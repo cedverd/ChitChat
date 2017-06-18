@@ -14,7 +14,7 @@
 				if($con->query($qry))
 				{
 					echo "registration successful";
-					header('Location:../index.html');
+					header('Location:../php/profile.php');
 				}
 			}
 			else

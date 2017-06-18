@@ -1,0 +1,42 @@
+.profile-heading{font-size: 30px;font-weight: 700;font-family: monospace;color: navy;margin-bottom: -30px;padding-left: 7px;}
+.profile-info{
+
+width: 400px;
+
+height: 199px;
+
+background-color: cornflowerblue;
+
+margin: 0 auto;
+
+padding-left: 20px;
+
+padding-top: 12px;
+
+border-radius: 3px;
+
+box-shadow: 2px 2px 7px;
+}
+.profile{
+
+}
+.name{
+	
+margin-top: 35px;
+	
+margin-bottom: 32px;
+	
+font-family: fantasy;
+}
+.profile-dp{
+	
+background-color: white;
+	
+height: 79px;
+	
+width: 88px;
+	
+border-radius: 100%;
+	
+margin-left: 149px;
+}
