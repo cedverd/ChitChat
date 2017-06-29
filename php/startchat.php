@@ -79,7 +79,8 @@ if(isset($_POST['msg']))
 	}
 }
 
-$q = "select * from messages where ( source_ID = '{$_SESSION['myid']}' or source_ID = '{$destid}' ) ORDER BY `dateline` DESC LIMIT 30";
+$q = "SELECT * FROM messages WHERE (( source_ID = '{$_SESSION['myid']}' AND dest_ID = '$destid') OR ( source_ID = '$destid' AND dest_ID = '{$_SESSION['myid']}') ORDER BY `dateline` DESC LIMIT 30";
+
 $result = $con->query($q);
 if($result)
 {

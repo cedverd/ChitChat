@@ -1,35 +1,41 @@
+
+
 <?php
-
-?>
-
-
+	require_once "login.php";
+	echo "hi";
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Profile</title>
 	<link rel="stylesheet" type="text/css" href="../css/profile.css">
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	
 </head>
 <body>
-	<a href="index.html">ChatOn</a>
-
-	<h4>Enter the world of <b>Baatein</b> and just forget the world. </h1>
-	<h5>Get ready to be lost in the world of <b>Thoughts</b></h2>
-
+	
 	<div class="profile-heading">
 		<p>Profile</p>	
 	</div>
 	<hr>
 	<div class="profile-info">
-		<div class="profile-dp"></div>
-		<div class="name">
-			Username
+		<div class="profile-dp">
+			<img class="dp" src="../images/theme1.jpg" width="380px" height="253px">
 		</div>
-		<div class="name">
-			Email
-		</div>	
+		<div class="profile-details">
+			<div class="name1">
+				Username<br>
+				<input type="text" name="">
+			</div>
+			<div class="name2">
+				Friends<br><input type="text" name="">
+			</div>
+			<div class="name3">
+				Messages<br><input type="text" name="">
+			</div>	
+		</div>
+		<div class="message">
+			<button class="profile-btn">Send Message</button>
+		</div>
 	</div>
-	
-
 </body>
 </html>

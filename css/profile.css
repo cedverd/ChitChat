@@ -1,42 +1,90 @@
-.profile-heading{font-size: 30px;font-weight: 700;font-family: monospace;color: navy;margin-bottom: -30px;padding-left: 7px;}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+	background-color: rgb(231, 233, 234);
+	font-family: 'Roboto', sans-serif;
+}
+.profile-heading{
+	background-color: gainsboro;
+    height: 34px;
+    border-radius: 3px;
+}
+.profile-heading p{
+	text-align: center;
+    margin-top: -1px;
+    padding-top: 4px;
+    font-size: 22px;
+    font-weight: bold;
+}
 .profile-info{
-
-width: 400px;
-
-height: 199px;
-
-background-color: cornflowerblue;
-
-margin: 0 auto;
-
-padding-left: 20px;
-
-padding-top: 12px;
-
-border-radius: 3px;
-
-box-shadow: 2px 2px 7px;
-}
-.profile{
-
-}
-.name{
-	
-margin-top: 35px;
-	
-margin-bottom: 32px;
-	
-font-family: fantasy;
+	margin: 0 auto;
+	width: 458px;
+	height: 456px;
+	background-color: #75787c;
+	border-radius: 3px;
+	margin-top: 4%;
+	margin-bottom: 4%;
 }
 .profile-dp{
-	
-background-color: white;
-	
-height: 79px;
-	
-width: 88px;
-	
-border-radius: 100%;
-	
-margin-left: 149px;
+	height: 253px;
+	width: 380px;
+	padding-top: 17px;
+	padding-left: 39px;
+    position: relative;
+    z-index: 10;
+	margin-top: -17px;
+}
+.dp{
+	margin: 0;
+	padding: 0;
+}
+.profile-details{
+	background-color: #a0a4aa;
+	width: 306px;
+	height: 121px;
+	margin-left: 57px;
+	margin-top: -3px;
+	border-radius: 3px;
+	padding: 0 18px;
+	z-index: 5;
+	position: relative;
+}
+.name1{
+	margin-bottom: 22px;
+	padding-top: 41px;}
+.name2{
+	margin-left: 124px;
+	margin-top: -70px;
+}
+.name3{
+	margin-left: 222px;
+	margin-top: -48px;
+}
+input[type="text"]{
+	width: 68px;
+	margin-top: 10px;
+	border: 0 none;
+	background: transparent;
+	border-bottom: 2px solid #bdc3c7;
+	outline: none;
+	text-align: center;
+	margin-left: -5px;
+}
+.message{
+	background-color: #c4c8ce;
+	height: 81px;
+	z-index: 1;
+	position: relative;
+	margin-top: -32px;
+	width: 255px;
+	margin-left: 102px;
+	border-radius: 3px;
+}
+.profile-btn{
+	margin: 0 auto;
+	margin-top: 43px;
+	margin-left: 66px;
+	height: 28px;
+	width: 122px;
+	border-style: none;
+	border-radius: 3px;
 }
