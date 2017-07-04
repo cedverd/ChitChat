@@ -12,6 +12,7 @@
 			{		
 				if($row['status'] =='y')
 				{
+					$_SESSION['inviteid'] = $row['Invi_ID'];
 					//redirect to the chat page
 					header('Location:startchat.php');
 					exit;

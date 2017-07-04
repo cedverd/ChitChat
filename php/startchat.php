@@ -47,9 +47,12 @@ function time2str($ts)
     }
 }
 
+//print_r( $_SESSION );
+//exit;
+
 $con = mysqli_connect("localhost","root","","chat_db");
 
-$query = $con->query( 'SELECT * FROM invitations WHERE `status` = \'y\'' );
+$query = $con->query( 'SELECT * FROM invitations WHERE `status` = \'y\' AND Invi_ID=\''.$_SESSION['inviteid'].'\'' );
 $invite = $query->fetch_assoc();
 
 if( empty( $invite ) )
@@ -78,6 +81,9 @@ if(isset($_POST['msg']))
 		}
 	}
 }
+// echo  "source". $_SESSION['myid'];
+// echo  "dest" .$destid;
+// exit;
 
 $q = "SELECT * FROM messages WHERE (( source_ID = '{$_SESSION['myid']}' AND dest_ID = '$destid') OR ( source_ID = '$destid' AND dest_ID = '{$_SESSION['myid']}') ORDER BY `dateline` DESC LIMIT 30";
 
@@ -124,7 +130,7 @@ if( strtolower($_SERVER['REQUEST_METHOD']) == 'post' )
 		if( $action == 'get' )
 		{
 			$messages = '';
-			$q = "SELECT * from messages where ( source_ID <> '{$_SESSION['myid']}' ) AND `message_status` = 'unseen' ORDER BY `dateline` DESC LIMIT 30";
+			$q = "SELECT * from messages where ( source_ID ='{$destid}'  ) AND `message_status` = 'unseen' ORDER BY `dateline` DESC LIMIT 30";
 			
 			$result = $con->query($q);
 			if($result)

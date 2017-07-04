@@ -1,5 +1,5 @@
 body{
-	background: url("https://www.toptal.com/designers/subtlepatterns/patterns/pow-star.png");
+	background: #252833;
 	font-family: all;
 	height: 645px;
 }
@@ -7,20 +7,23 @@ a{
 	text-decoration: none;
 	color: #0006fd;
 	font-size: -webkit-xxx-large;
-	width: 100%;
 	display: inline-block;
-	text-align: center;
+	box-sizing: border-box;
+	margin-left: 46%;
 }
 h4{
 	text-align: center;
-	font-size: 23px;
-	color: #0006fd;
+	font-size: 14px;
+	color: #ccc;
+	font-variant: small-caps;
 }
 h5{
 	text-align: center;
 	font-size: 20px;
 	margin-top: -19px;
-	color: #0006fd;
+	color: #ccc;
+	font-size: 14px;
+	font-variant: small-caps;
 }
 h1{
 	text-align: center;
@@ -29,6 +32,8 @@ h1{
 	color: white;
 }
 .p1{
+	    display: inline-block;
+	    width: 100px;
 }
 .para1{
 	margin-top: -18px;
@@ -96,15 +101,13 @@ input[type="text"]{
 	height: 24px;
 	width: 180px;
 	padding-left: 12px;
-	margin-left: 33px;
 }
 input[type="password"]{
 	border-radius: 3px;
 	border-style: hidden;
 	height: 24px;
-	width: 177px;
+	width: 180px;
 	padding-left: 12px;
-	margin-left: 16px;
 	margin-top: 8px;
 }
 button:hover
@@ -130,21 +133,24 @@ input[type="email"]{
 	height: 24px;
 	width: 179px;
 	padding-left: 12px;
-	margin-left: 61px;
 	margin-top: 8px;
+}
+.textbox{
+
 }
 button
 {
 	height: 28px;
-	width: 67px;
+	width: 79px;
 	border-radius: 3px;
 	border-style: hidden;
 	font-size: 15px;
-	margin-left: 99px;	
+	margin-left: 125px;
 	margin-top: 14px;
-	font-weight: bold;
+	font-weight: 600;
 }
 input[ tyep="placeholder"]
 {
 	font-weight:bold; 
 }
+.prof{float: right;margin-right: 90px;clear: both;margin-top: -4px;}

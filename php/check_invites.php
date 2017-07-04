@@ -6,13 +6,14 @@
 		if( !empty($_SESSION['myid']))
 		{
 			$con = mysqli_connect("localhost","root","","chat_db");
-			$q = "select * from invitations where dest_ID = '{$_SESSION['myid']}' order by Invi_id desc ";
-			$result = $con->query($q);
+			$result = $con->query("select * from invitations where dest_ID = '{$_SESSION['myid']}'");
 			
 			if($row = $result->fetch_assoc())
 			{
 				$_SESSION['dest'] = $row['source_ID'];
-				$query = "update  invitations set status  = 'y' where source_ID = '{$_SESSION['dest']}' and dest_ID = '{$_SESSION['myid']}'";
+				$_SESSION['inviteid'] = $row['Invi_ID'];
+				
+				$query = "update  invitations set status  = 'y' where Invi_ID='".$row['Invi_ID']."'";
 				$con->query($query);
 				header('Location: startchat.php');
 			}

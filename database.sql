@@ -27,9 +27,4 @@ create table Invitations
 	);
 
 
-	SELECT * FROM messages WHERE (
-									( source_ID = '{$_SESSION['myid']}' AND dest_ID = '$destid')
-									 OR
-									( source_ID = '$destid' AND dest_ID = '{$_SESSION['myid']}') 
-								)
-	( source_ID = '{$_SESSION['myid']}' AND dest_ID = '{$_SESSION['myid']}' ) ORDER BY `dateline` DESC LIMIT 30";);
+	
